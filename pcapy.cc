@@ -214,6 +214,7 @@ initpcapy(void)
   PyModule_AddIntConstant(m, "DLT_LOOP", 108);
   PyModule_AddIntConstant(m, "DLT_LINUX_SLL", 113);
   PyModule_AddIntConstant(m, "DLT_LTALK", 114);
+  PyModule_AddIntConstant(m, "DLT_IEEE802_15_4", 195);
 
   d = PyModule_GetDict(m);
   PcapError = PyErr_NewException("pcapy.PcapError", NULL, NULL );
